@@ -1,13 +1,8 @@
 def BubbleSort(Liste):
-    changes = 1
-    while changes != 0:
-        changes = 0
-        i=1
-        while i < len(Liste):
-            if Liste[i-1] > Liste[i]:
-                Liste[i-1],Liste[i] = Liste[i],Liste[i-1]
-                changes+=1
-            i+=1
+    for i in range(len(Liste)):
+        for j in range(len(Liste)-i-1):
+            if Liste[j] > Liste[j+1]:
+                Liste[j+1],Liste[j] = Liste[j],Liste[j+1]
     return Liste
 
 if __name__ == '__main__':
