@@ -1,9 +1,8 @@
 def recursive_Bubblesort(Liste):
-    for i, num in enumerate(Liste): 
+    for i in range(len(Liste)): 
         try: 
-            if Liste[i+1] < num: 
-                Liste[i] = Liste[i+1] 
-                Liste[i+1] = num 
+            if Liste[i+1] < Liste[i]: 
+                Liste[i], Liste[i+1] = Liste[i+1], Liste[i] 
                 recursive_Bubblesort(Liste)
         except IndexError:
             pass
