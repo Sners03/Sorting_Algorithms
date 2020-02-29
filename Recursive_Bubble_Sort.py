@@ -1,4 +1,8 @@
 def recursive_Bubblesort(Liste):
+    '''
+    The recursive version of Bubblesort has noadvantage against the normal 
+    version. It's just for exercising algorithms and recursion.
+    '''
     for i in range(len(Liste)): 
         try: 
             if Liste[i+1] < Liste[i]: 
