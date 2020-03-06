@@ -1,4 +1,4 @@
-def SelectionSort(Liste):
+def Selection_Sort(Liste):
     def min(Liste):
         min = Liste[0]
         index_min=0
@@ -18,10 +18,10 @@ def SelectionSort(Liste):
 if __name__=='__main__':
 
     Liste1=[4,3,5,2,6,1,0]
-    print(SelectionSort(Liste1), '\n')
+    print(Selection_Sort(Liste1), '\n')
 
     Liste2=[1,9,8,7,6,5,0,4,3,2,1,2]
-    print(SelectionSort(Liste2), '\n')
+    print(Selection_Sort(Liste2), '\n')
 
     Liste3=[0,1,2,3,4,5]
-    print(SelectionSort(Liste3), '\n')
+    print(Selection_Sort(Liste3), '\n')
